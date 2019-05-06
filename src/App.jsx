@@ -7,6 +7,7 @@ import SplitComponent from './components/SplitComponent';
 const Navbar = SplitComponent(() => import('./components/Navbar'));
 
 /* Views */
+const ItemsView = SplitComponent(() => import('./views/items'));
 const MainView = SplitComponent(() => import('./views/main'));
 
 const hist = createBrowserHistory();
@@ -19,6 +20,7 @@ const App = () => (
     <Navbar logoText="Horadric Armory" links={links} />
     <Switch>
       <Route exact path="/" component={MainView} />
+      <Route path="/items" component={ItemsView} />
     </Switch>
   </Router>
 );

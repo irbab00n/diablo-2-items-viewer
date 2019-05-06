@@ -7,10 +7,10 @@ const Link = (props) => {
   /*
     @TODO: Allow for configurabe size
   */
-  const { className, href, text } = props;
+  const { children, className = '', href } = props;
 
   return (
-    <RLink className={'link ' + className} to={href}>{text}</RLink>
+    <RLink className={'link ' + className} to={href}>{children}</RLink>
   );
 };
 

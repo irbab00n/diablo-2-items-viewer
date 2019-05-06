@@ -1,0 +1,4 @@
+/* offset-x | offset-y | blur-radius | color */
+@mixin text-shadow ($xOffset, $yOffset, $blurRadius, $color) {
+  text-shadow: $xOffset $yOffset $blurRadius $color;
+}

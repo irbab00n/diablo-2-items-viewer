@@ -8,7 +8,7 @@ const Link = SplitComponent(() => import('../Link'));
 
 const Navbar = (props) => (
   <header className="navbar">
-    <Link className="logo no-underline" href="/" text={props.logoText} />
+    <Link className="logo no-underline" href="/">{props.logoText}</Link>
     <ul className="links">
       {
         props.links ?

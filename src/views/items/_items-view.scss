@@ -1,0 +1,9 @@
+@import '../../../sass/app-dimensions';
+@import '../../../sass/colors';
+@import '../../../sass/diablo-2';
+@import '../../../sass/mixins/flexbox';
+
+#items-view {
+  min-height: calc(100vh - $navbar-height);
+  width: 100%;
+}

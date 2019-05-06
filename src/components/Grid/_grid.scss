@@ -6,7 +6,6 @@
   @include flex; @include flex-wrap(wrap);
   @include transition(0.2s);
   width: 100%;
-  min-height: 280px;
 
   & > * {
     @include transition(0.2s);
@@ -18,7 +17,6 @@
 
   & > .quarter-item {
     width: 25%;
-    min-height: 22.5vw;
 
     &.centered {
       @include flex; @include align-items(center); @include justify-center;
@@ -31,7 +29,6 @@
 
   & > .half-item {
     width: 50%;
-    min-height: 45vw;
 
     &.centered {
       @include flex; @include align-items(center); @include justify-center;
@@ -44,7 +41,6 @@
 
   & > .full-item {
     width: 100%;
-    min-height: 90vh;
 
     &.centered {
       @include flex; @include align-items(center); @include justify-center;

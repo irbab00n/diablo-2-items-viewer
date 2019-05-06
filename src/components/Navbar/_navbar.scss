@@ -1,9 +1,10 @@
+@import '../../../sass/app-dimensions';
 @import '../../../sass/colors';
 @import '../../../sass/mixins/box-shadow';
+@import '../../../sass/diablo-2';
 @import '../../../sass/mixins/flexbox';
+@import '../../../sass/mixins/text-shadow';
 @import '../../../sass/mixins/transition';
-
-$navbar-height: 60px;
 
 .navbar {
   @include flex; // display items as a row if items
@@ -15,21 +16,13 @@ $navbar-height: 60px;
 }
 
 .navbar > .logo {
+  @include text-shadow(0px, 2px, 3px, $black);
   @include transition(0.2s);
-  color: $grey-200;
+  @include diablo-2-text('unique', 1, 1);
   margin-left: 20px; // Spacing from the left edge of the parent container
-  // font-family: 'Oswald', sans-serif;
   font-family: 'Diablo';
   font-size: 36px;
   font-weight: 500;
-
-  &:hover {
-    color: $grey-400;
-  }
-
-  &:active {
-    color: $cyan;
-  }
 }
 
 /* NAVBAR LINKS CONTAINER STYLES */

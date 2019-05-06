@@ -1,0 +1,138 @@
+@import './colors';
+
+@mixin diablo-2-text ($rarity, $shouldHover: 0, $shouldActive: 0) {
+  @if $rarity == 'magic' {
+    color: $diablo-2-magic;
+    @if $shouldHover == 1 {
+      &:hover {
+        color: $diablo-2-magic-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        color: $diablo-2-magic-active;
+      }
+    }
+  }
+  @if $rarity == 'rare' {
+    color: $diablo-2-rare;
+    @if $shouldHover == 1 {
+      &:hover {
+        color: $diablo-2-rare-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        color: $diablo-2-rare-active;
+      }
+    }
+  }
+  @if $rarity == 'crafted' {
+    color: $diablo-2-crafted;
+    @if $shouldHover == 1 {
+      &:hover {
+        color: $diablo-2-crafted-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        color: $diablo-2-crafted-active;
+      }
+    }
+  }
+  @if $rarity == 'set' {
+    color: $diablo-2-set;
+    @if $shouldHover == 1 {
+      &:hover {
+        color: $diablo-2-set-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        color: $diablo-2-set-active;
+      }
+    }
+  }
+  @if $rarity == 'unique' {
+    color: $diablo-2-unique;
+    @if $shouldHover == 1 {
+      &:hover {
+        color: $diablo-2-unique-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        color: $diablo-2-unique-active;
+      }
+    }
+  }
+}
+
+@mixin diablo-2-background ($rarity, $shouldHover: 0, $shouldActive: 0) {
+  @if $rarity == 'magic' {
+    background-color: $diablo-2-magic;
+    @if $shouldHover == 1 {
+      &:hover {
+        background-color: $diablo-2-magic-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        background-color: $diablo-2-magic-active;
+      }
+    }
+  }
+  @if $rarity == 'rare' {
+    background-color: $diablo-2-rare;
+    @if $shouldHover == 1 {
+      &:hover {
+        background-color: $diablo-2-rare-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        background-color: $diablo-2-rare-active;
+      }
+    }
+  }
+  @if $rarity == 'crafted' {
+    background-color: $diablo-2-crafted;
+    @if $shouldHover == 1 {
+      &:hover {
+        background-color: $diablo-2-crafted-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        background-color: $diablo-2-crafted-active;
+      }
+    }
+  }
+  @if $rarity == 'set' {
+    background-color: $diablo-2-set;
+    @if $shouldHover == 1 {
+      &:hover {
+        background-color: $diablo-2-set-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        background-color: $diablo-2-set-active;
+      }
+    }
+  }
+  @if $rarity == 'unique' {
+    background-color: $diablo-2-unique;
+    @if $shouldHover == 1 {
+      &:hover {
+        background-color: $diablo-2-unique-hover;
+      }
+    }
+    @if $shouldActive == 1 {
+      &:active {
+        background-color: $diablo-2-unique-active;
+      }
+    }
+  }
+}
+

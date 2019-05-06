@@ -1,4 +1,6 @@
+@import '../../../sass/app-dimensions';
 @import '../../../sass/colors';
+@import '../../../sass/diablo-2';
 @import '../../../sass/mixins/box-shadow';
 @import '../../../sass/mixins/flexbox';
 @import '../../../sass/mixins/transition';
@@ -6,11 +8,11 @@
 $main-view-section-inner-width: 1200px;
 
 #main-view {
+  min-height: calc(100vh - $navbar-height);
   width: 100%;
 }
 
 #main-view > section {
-  min-height: 600px;
   padding: 20px;
 
   &.bg-grey-100 {
@@ -30,6 +32,6 @@ $main-view-section-inner-width: 1200px;
 .page-title {
   margin: 24px 0;
   margin-left: 20px;
-  font-size: 48px;
+  font-size: 36px;
 }
 
