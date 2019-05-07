@@ -16,7 +16,6 @@ const ItemsPage = (props) => {
       <section>
         <GridWrapper>
           <GridItem width="full"><h1>Welcome to the Items Page</h1></GridItem>
-          <GridItem width="full"><h4>Weapons & Armor</h4></GridItem>
           <GridItem width="half"><Link href={`${match.url}/weapons`}>View Weapons</Link></GridItem>
           <GridItem width="half"><Link href={`${match.url}/armor`}>View Armor</Link></GridItem>
           <GridItem width="quarter"><Link href={`${match.url}/gems`}>View Gems</Link></GridItem>

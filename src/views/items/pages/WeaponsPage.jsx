@@ -18,6 +18,27 @@ const WeaponsPage = (props) => {
         <GridWrapper>
           <GridItem width="full"><Link href={root}>Back to Items</Link></GridItem>
           <GridItem width="full"><h1>Welcome to the Weapons Page</h1></GridItem>
+          <GridItem width="quarter" centered>Axes</GridItem>
+          <GridItem width="quarter" centered>Bows</GridItem>
+          <GridItem width="quarter" centered>Crossbows</GridItem>
+          <GridItem width="quarter" centered>Daggers</GridItem>
+          <GridItem width="quarter" centered>Javelins</GridItem>
+          <GridItem width="quarter" centered>Maces</GridItem>
+          <GridItem width="quarter" centered>Polearms</GridItem>
+          <GridItem width="quarter" centered>Scepters</GridItem>
+          <GridItem width="quarter" centered>Spears</GridItem>
+          <GridItem width="quarter" centered>Staves</GridItem>
+          <GridItem width="quarter" centered>Swords</GridItem>
+          <GridItem width="quarter" centered>Throwing</GridItem>
+          <GridItem width="quarter" centered>Wands</GridItem>
+        </GridWrapper>
+      </section>
+      <section>
+        <GridWrapper>
+          <GridItem width="full"><h1>Class-Specific Weapons</h1></GridItem>
+          <GridItem width="quarter" centered>Amazon Weapons</GridItem>
+          <GridItem width="quarter" centered>Assassin Katars</GridItem>
+          <GridItem width="quarter" centered>Sorceress Orbs</GridItem>
         </GridWrapper>
       </section>
     </main>
