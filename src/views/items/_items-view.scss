@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-#items-view > section {
+#items-view > section, #items-view * section {
   padding: 20px;
 
   &.bg-grey-100 {

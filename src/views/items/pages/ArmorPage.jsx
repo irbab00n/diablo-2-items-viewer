@@ -4,6 +4,7 @@ import SplitComponent from '../../../components/SplitComponent';
 
 const GridWrapper = SplitComponent(() => import('../../../components/Grid/GridWrapper'));
 const GridItem = SplitComponent(() => import('../../../components/Grid/GridItem'));
+const GridItemLink = SplitComponent(() => import('../../../components/Grid/GridItemLink'));
 const Link = SplitComponent(() => import('../../../components/Link'));
 
 const ArmorPage = (props) => {
@@ -18,7 +19,7 @@ const ArmorPage = (props) => {
         <GridWrapper>
           <GridItem width="full"><Link href={root}>Back to Items</Link></GridItem>
           <GridItem width="full"><h1>Welcome to the Armor Page</h1></GridItem>
-          <GridItem width="quarter" centered>Helms</GridItem>
+          <GridItemLink width="quarter" centered href={`${match.path}/helms`}>Helms</GridItemLink>
           <GridItem width="quarter" centered>Armor</GridItem>
           <GridItem width="quarter" centered>Shields</GridItem>
           <GridItem width="quarter" centered>Gloves</GridItem>

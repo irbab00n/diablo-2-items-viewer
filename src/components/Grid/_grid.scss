@@ -1,9 +1,10 @@
+@import '../../../sass/app-dimensions';
 @import '../../../sass/app-responsive';
 @import '../../../sass/colors';
 @import '../../../sass/mixins/flexbox';
 @import '../../../sass/mixins/transition';
 
-.grid-wrapper {
+.grid-wrapper, .grid-wrapper > a {
   @include flex; @include flex-wrap(wrap);
   @include transition(0.2s);
   width: 100%;
@@ -11,48 +12,54 @@
   & > * {
     @include transition(0.2s);
 
-    // &:hover {
-    //   background-color: $blue-grey-400;
-    // }
+    & > p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    &.centered {
+      @include flex; @include align-items(center); @include justify-center;
+    }
+
+    &.should-scroll {
+      max-height: calc(100vh - 60px);
+      overflow-y: scroll;
+    }
+  }
+
+  & > .fifth-item {
+    width: 20%;
+    min-height: 10vw;
   }
 
   & > .quarter-item {
     width: 25%;
-
-    &.centered {
-      @include flex; @include align-items(center); @include justify-center;
-    }
-
-    &.anchor-right {
-      margin-left: auto;
-    }
-
-    @include respond-to-breakpoint(768px) {
-
-    };
+    min-height: 10vw;
   }
 
   & > .half-item {
     width: 50%;
+    min-height: 20vw;
+  }
 
-    &.centered {
-      @include flex; @include align-items(center); @include justify-center;
-    }
+  & > .three-quarter-item {
+    width: 75%;
+    min-height: 20vw;
+  }
 
-    &.anchor-right {
-      margin-left: auto;
-    }
+  & > .four-fifths-item {
+    width: 80%;
+    min-height: 20vw;
   }
 
   & > .full-item {
     width: 100%;
+  }
+}
 
-    &.centered {
-      @include flex; @include align-items(center); @include justify-center;
-    }
+.grid-item-link {
 
-    &.anchor-right {
-      margin-left: auto;
-    }
+  &:hover {
+    background-color: $blue-grey-400;
   }
 }
