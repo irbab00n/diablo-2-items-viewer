@@ -26,42 +26,45 @@ const ItemsPage = (props) => {
           <section>
             <GridWrapper>
               <GridItem width="full"><h4>Item Basics</h4></GridItem>
+              <GridItem width="full"><p>To learn more about some of <Link href={`${match.url}/item-basics`}>the basics</Link> of how items work within Diablo 2.</p></GridItem>
             </GridWrapper>
           </section>
           <section>
             <GridWrapper>
               <GridItem width="full"><h4>Potions</h4></GridItem>
-              <GridItemLink width="quarter" href={`${match.url}/potions`} centered>View Potions</GridItemLink>
-              
+              <GridItem width="full">
+                <p>Learn more about the various types of <Link href={`${match.url}/potions`}>potions</Link> found in the world.</p>
+              </GridItem>
             </GridWrapper>
           </section>
           <section>
             <GridWrapper>
               <GridItem width="full"><h4>Rings & Amulets</h4></GridItem>
-              <GridItemLink width="quarter" href={`${match.url}/rings`} centered>View Rings</GridItemLink>
-              <GridItemLink width="quarter" href={`${match.url}/amulets`} centered>View Amulets</GridItemLink>
+              <GridItem width="full">
+                <p>Before gold coins were accepted as the universal currency, the wealthy fashioned gemstones and precious metals into jewelry in order to display their riches to others. Court mages eventually discovered that these adornments could be charged with magical enchantments. Of this jewelry, we have <Link href={`${match.url}/rings`}>rings</Link> and <Link href={`${match.url}/amulets`}>amulets</Link>.</p>
+              </GridItem>
             </GridWrapper>
           </section>
           <section>
             <GridWrapper>
               <GridItem width="full"><h4>Weapons & Armor</h4></GridItem>
-              <GridItemLink width="half" href={`${match.url}/weapons`} centered>View Weapons</GridItemLink>
-              <GridItemLink width="half" href={`${match.url}/armor`} centered>View Armor</GridItemLink>
+              <GridItemLink width="half" href={`${match.url}/weapons`} centered>Weapons</GridItemLink>
+              <GridItemLink width="half" href={`${match.url}/armor`} centered>Armor</GridItemLink>
             </GridWrapper>
           </section>
           <section>
             <GridWrapper>
               <GridItem width="full"><h4>Socketed Items</h4></GridItem>
-              <GridItemLink width="quarter" href={`${match.url}/gems`} centered>View Gems</GridItemLink>
-              <GridItemLink width="quarter" href={`${match.url}/jewels`} centered>View Jewels</GridItemLink>
-              <GridItemLink width="half" href={`${match.url}/runes`} centered>View Runes</GridItemLink>
-              <GridItemLink width="half" href={`${match.url}/runewords`} centered>View Runewords</GridItemLink>
+              <GridItemLink width="quarter" href={`${match.url}/gems`} centered>Gems</GridItemLink>
+              <GridItemLink width="quarter" href={`${match.url}/jewels`} centered>Jewels</GridItemLink>
+              <GridItemLink width="half" href={`${match.url}/runes`} centered>Runes</GridItemLink>
+              <GridItemLink width="full" href={`${match.url}/runewords`} centered>Runewords</GridItemLink>
             </GridWrapper>
           </section>
           <section>
             <GridWrapper>
               <GridItem width="full"><h4>Misc Items within Diablo 2</h4></GridItem>
-              <GridItemLink width="quarter" href={`${match.url}/charms`} centered>View Charms</GridItemLink>
+              <GridItemLink width="quarter" href={`${match.url}/charms`} centered>Charms</GridItemLink>
             </GridWrapper>
           </section>
         </GridItem>
