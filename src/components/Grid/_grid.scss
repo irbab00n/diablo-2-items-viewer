@@ -11,9 +11,9 @@
   & > * {
     @include transition(0.2s);
 
-    &:hover {
-      background-color: $blue-grey-400;
-    }
+    // &:hover {
+    //   background-color: $blue-grey-400;
+    // }
   }
 
   & > .quarter-item {
