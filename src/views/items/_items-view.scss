@@ -7,3 +7,20 @@
   min-height: calc(100vh - $navbar-height);
   width: 100%;
 }
+
+#items-view > section {
+  padding: 20px;
+
+  &.bg-grey-100 {
+    background-color: $grey-100;
+  }
+  &.bg-grey-200 {
+    background-color: $grey-200;
+  }
+  &.bg-grey-400 {
+    background-color: $grey-400;
+  }
+  &.bg-grey-600 {
+    background-color: $grey-600;
+  }
+}

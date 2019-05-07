@@ -1,3 +1,4 @@
+@import '../../../sass/app-responsive';
 @import '../../../sass/colors';
 @import '../../../sass/mixins/flexbox';
 @import '../../../sass/mixins/transition';
@@ -25,6 +26,10 @@
     &.anchor-right {
       margin-left: auto;
     }
+
+    @include respond-to-breakpoint(768px) {
+
+    };
   }
 
   & > .half-item {

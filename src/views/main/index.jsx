@@ -13,8 +13,9 @@ const MainView = () => (
     {/* <h1 className="page-title">A Grid with various sized components!</h1> */}
     <section className="bg-grey-400">
       <GridWrapper>
-      
-        <GridItem width="full" ><h1>Quarter Grid</h1></GridItem>
+        <GridItem width="full">
+          <h1>Welcome to the Horadric Armory</h1>
+        </GridItem>
         <GridItem width="quarter" ><Link href="/items">View Items</Link></GridItem>
       </GridWrapper>
     </section>

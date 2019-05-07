@@ -1,0 +1,12 @@
+
+Breakpoints to respond to
+
+2560px
+1920px
+1440px
+1023px
+768px
+767px
+425px
+375px
+
