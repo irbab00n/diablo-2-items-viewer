@@ -13,7 +13,7 @@ const WeaponsPage = (props) => {
   console.log('match on weapons page: ', match);
 
   return (
-    <main id="items-view">
+    <GridItem width="four-fifths" enableScrolling={true}>
       <section>
         <GridWrapper>
           <GridItem width="full"><Link href={root}>Back to Items</Link></GridItem>
@@ -41,7 +41,7 @@ const WeaponsPage = (props) => {
           <GridItem width="quarter" centered>Sorceress Orbs</GridItem>
         </GridWrapper>
       </section>
-    </main>
+    </GridItem>
   );
 };
 

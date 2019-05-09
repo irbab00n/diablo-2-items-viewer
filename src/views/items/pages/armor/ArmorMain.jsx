@@ -15,7 +15,7 @@ const ArmorMain = (props) => {
   // console.log('match on items/armor :', match);
 
   return (
-    <main id="items-view">
+    <GridItem width="four-fifths" enableScrolling={true}>
       <section>
         <GridWrapper>
           {/* Insert Breadcrumb Link Component here */}
@@ -40,7 +40,7 @@ const ArmorMain = (props) => {
           <GridItemLink width="quarter" centered href={`${match.path}/necromancer-heads`}>Necromancer Shrunken Heads</GridItemLink>
         </GridWrapper>
       </section>
-    </main>
+    </GridItem>
   );
 };
 

@@ -13,14 +13,12 @@ const RunewordsPage = (props) => {
   console.log('match on armor view: ', match);
 
   return (
-    <main id="items-view">
-      <section>
-        <GridWrapper>
-          <GridItem width="full"><Link href={root}>Back to Items</Link></GridItem>
-          <GridItem width="full"><h1>Welcome to the Runewords Page</h1></GridItem>
-        </GridWrapper>
-      </section>
-    </main>
+    <GridItem width="four-fifths" enableScrolling={true}>
+      <GridWrapper>
+        <GridItem width="full"><Link href={root}>Back to Items</Link></GridItem>
+        <GridItem width="full"><h1>Welcome to the Runewords Page</h1></GridItem>
+      </GridWrapper>
+    </GridItem>
   );
 };
 

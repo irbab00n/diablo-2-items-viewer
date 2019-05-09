@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router';
 
 import SplitComponent from '../../../../components/SplitComponent';
 
+const ArmorCategory = SplitComponent(() => import('./ArmorCategory'));
 const ArmorMain = SplitComponent(() => import('./ArmorMain'));
 
 const ArmorPage = (props) => {
@@ -10,7 +11,7 @@ const ArmorPage = (props) => {
   return (
     <Switch>
       <Route exact path={`${match.path}`} component={ArmorMain}/>
-      <Route path={`${match.path}/:armorBase`} render={(props) => {console.log('props to render on new component: ', props);}}/>
+      <Route path={`${match.path}/:armorBase`} component={ArmorCategory}/>
     </Switch>
   );
 };
