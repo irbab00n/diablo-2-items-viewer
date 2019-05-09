@@ -1,15 +1,11 @@
 import React from 'react';
 
 import SplitComponent from '../SplitComponent';
+import capitolizeFirstChar from './capitolizeFirstChar';
 
 import './_crumb-link.scss';
 
 const Link = SplitComponent(() => import('../Link'));
-
-const capitolizeFirstChar = string => {
-  console.log('string to capitolize: ', string);
-  return string[0].toUpperCase() + string.substr(1);
-}; 
 
 const CrumbLink = (props) => (
   <li>
