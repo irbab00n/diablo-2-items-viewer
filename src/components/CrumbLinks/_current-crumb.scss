@@ -1,0 +1,8 @@
+@import '../../../sass/mixins/flexbox';
+@import '../../../sass/mixins/transition';
+@import '../../../sass/colors';
+
+.current-crumb {
+  color: $grey-900;
+  font-weight: bold;
+}

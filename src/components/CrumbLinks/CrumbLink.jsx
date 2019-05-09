@@ -12,8 +12,8 @@ const capitolizeFirstChar = string => {
 }; 
 
 const CrumbLink = (props) => (
-  <li className="breadcrumb-link">
-    <Link href={props.href}>{capitolizeFirstChar(props.text)}</Link>
+  <li>
+    <Link className="breadcrumb-link" href={props.href}>{capitolizeFirstChar(props.text)}</Link>
     <span className="breadcrumb-link-spacer">&#62;</span>
   </li>
 );

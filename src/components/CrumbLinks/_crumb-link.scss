@@ -1,9 +1,14 @@
 @import '../../../sass/mixins/flexbox';
+@import '../../../sass/mixins/transition';
+@import '../../../sass/diablo-2';
 
 .breadcrumb-link {
-
+  @include transition(0.2s);
+  @include diablo-2-text('magic', 1, 1);
+  font-weight: bold;
 }
 
 .breadcrumb-link-spacer {
   margin: 0px 10px;
+  font-weight: bold;
 }

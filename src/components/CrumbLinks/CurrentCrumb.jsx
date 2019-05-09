@@ -6,7 +6,7 @@ const capitolizeFirstChar = string => {
 }; 
 
 const CurrentCrumb = (props) => (
-  <li className="breadcrumb-link">{capitolizeFirstChar(props.text)}</li>
+  <li className="current-crumb">{capitolizeFirstChar(props.text)}</li>
 );
 
 export default CurrentCrumb;
