@@ -24,7 +24,7 @@ const ItemsView = (props) => {
   const { match } = props;
   return (
     <main id="items-view">
-      <GridWrapper>
+      <GridWrapper id="items-view-grid">
         <GridItem width="fifth">
           SideNav
         </GridItem>
