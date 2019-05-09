@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import SplitComponent from '../../../components/SplitComponent';
 
@@ -15,7 +15,9 @@ const ItemsPage = (props) => {
   return (
     <main id="items-view">
       <GridWrapper>
-        <GridItem width="fifth" enableScrolling>SideNav</GridItem>
+        <GridItem width="fifth" enableScrolling>
+          SideNav
+        </GridItem>
         <GridItem width="four-fifths" enableScrolling={true}>
           <section>
             <GridWrapper>

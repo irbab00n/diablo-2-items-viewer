@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router';
 
 import SplitComponent from '../../components/SplitComponent';
 
-const ArmorPage = SplitComponent(() => import('./pages/ArmorPage'));
+const ArmorPage = SplitComponent(() => import('./pages/armor'));
 const CharmsPage = SplitComponent(() => import('./pages/CharmsPage'));
 const GemsPage = SplitComponent(() => import('./pages/GemsPage'));
 const ItemBasicsPage = SplitComponent(() => import('./pages/ItemBasicsPage'));
