@@ -2,6 +2,8 @@ import React from 'react';
 
 import SplitComponent from '../SplitComponent';
 
+import './_crumb-link.scss';
+
 const Link = SplitComponent(() => import('../Link'));
 
 const capitolizeFirstChar = string => {
@@ -10,7 +12,10 @@ const capitolizeFirstChar = string => {
 }; 
 
 const CrumbLink = (props) => (
-  <li className="breadcrumb-link"><Link href={props.href}>{capitolizeFirstChar(props.text)}</Link></li>
+  <li className="breadcrumb-link">
+    <Link href={props.href}>{capitolizeFirstChar(props.text)}</Link>
+    <span className="breadcrumb-link-spacer">&#62;</span>
+  </li>
 );
 
 export default CrumbLink;
