@@ -1,4 +1,5 @@
 @import '../../../sass/app-dimensions';
+@import '../../../sass/app-responsive';
 @import '../../../sass/colors';
 @import '../../../sass/diablo-2';
 @import '../../../sass/mixins/flexbox';
@@ -6,6 +7,12 @@
 #items-view {
   min-height: calc(100vh - $navbar-height);
   width: 100%;
+  margin: 0px auto;
+  max-width: 1920px;
+  
+  @include respond-to-breakpoint(2560px) {
+    // max-width: 1920px;
+  }
 }
 
 #items-view > section, #items-view * section {

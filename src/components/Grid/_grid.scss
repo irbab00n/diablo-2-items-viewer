@@ -21,6 +21,10 @@
       @include flex; @include align-items(center); @include justify-center;
     }
 
+    &.column {
+      @include flex-column;
+    }
+
     &.should-scroll {
       max-height: calc(100vh - 60px);
       overflow-y: scroll;
