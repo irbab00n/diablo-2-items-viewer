@@ -1,6 +1,6 @@
-@import '../../../sass/mixins/flexbox';
-@import '../../../sass/mixins/transition';
-@import '../../../sass/diablo-2';
+@import '../../sass/mixins/flexbox';
+@import '../../sass/mixins/transition';
+@import '../../sass/diablo-2';
 
 .breadcrumb-link {
   @include transition(0.2s);

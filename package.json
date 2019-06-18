@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack --config webpack.dev.jss",
+    "dev": "webpack --config webpack.dev.js",
     "start:dev": "npm run dev & nodemon server",
     "start": "npm run build & node server",
     "test": "echo \"Error: no test specified\" && exit 1"

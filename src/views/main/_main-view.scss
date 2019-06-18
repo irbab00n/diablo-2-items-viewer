@@ -1,9 +1,9 @@
-@import '../../../sass/app-dimensions';
-@import '../../../sass/colors';
-@import '../../../sass/diablo-2';
-@import '../../../sass/mixins/box-shadow';
-@import '../../../sass/mixins/flexbox';
-@import '../../../sass/mixins/transition';
+@import '../../sass/app-dimensions';
+@import '../../sass/colors';
+@import '../../sass/diablo-2';
+@import '../../sass/mixins/box-shadow';
+@import '../../sass/mixins/flexbox';
+@import '../../sass/mixins/transition';
 
 $main-view-section-inner-width: 1200px;
 
@@ -35,3 +35,7 @@ $main-view-section-inner-width: 1200px;
   font-size: 36px;
 }
 
+.hero-image {
+  width: 100%;
+  -webkit-filter: sepia(60%);filter: sepia(60%);
+}

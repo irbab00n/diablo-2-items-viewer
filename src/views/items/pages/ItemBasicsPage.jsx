@@ -16,7 +16,7 @@ import removeTitleTag from './utils/removeTitleTag';
 import titleTag from './utils/titleTag';
 
 // CONTENT
-import itemBasicsContent from '../../../../lib/content/item-basics/home-page-content';
+import itemBasicsContent from '../../../lib/content/item-basics/home-page-content';
 
 /**
  * 

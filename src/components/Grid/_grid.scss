@@ -1,8 +1,8 @@
-@import '../../../sass/app-dimensions';
-@import '../../../sass/app-responsive';
-@import '../../../sass/colors';
-@import '../../../sass/mixins/flexbox';
-@import '../../../sass/mixins/transition';
+@import '../../sass/app-dimensions';
+@import '../../sass/app-responsive';
+@import '../../sass/colors';
+@import '../../sass/mixins/flexbox';
+@import '../../sass/mixins/transition';
 
 .grid-wrapper, .grid-wrapper > a {
   @include flex; @include flex-wrap(wrap);

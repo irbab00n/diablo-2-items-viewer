@@ -1,11 +1,11 @@
-@import '../../../sass/app-dimensions';
-@import '../../../sass/app-responsive';
-@import '../../../sass/colors';
-@import '../../../sass/mixins/box-shadow';
-@import '../../../sass/diablo-2';
-@import '../../../sass/mixins/flexbox';
-@import '../../../sass/mixins/text-shadow';
-@import '../../../sass/mixins/transition';
+@import '../../sass/app-dimensions';
+@import '../../sass/app-responsive';
+@import '../../sass/colors';
+@import '../../sass/mixins/box-shadow';
+@import '../../sass/diablo-2';
+@import '../../sass/mixins/flexbox';
+@import '../../sass/mixins/text-shadow';
+@import '../../sass/mixins/transition';
 
 .navbar {
   @include flex; // display items as a row if items

@@ -1,7 +1,7 @@
 import React from 'react';
 import './_main-view.scss';
 
-import diablo2Banner from '../../../assets/images/diablo-2-banner.jpg';
+// import diablo2wallpaper from '../../../assets/images/diablo-2-wallpaper.jpg';
 
 import SplitComponent from '../../components/SplitComponent';
 const GridWrapper = SplitComponent(() => import('../../components/Grid/GridWrapper'));
@@ -16,7 +16,7 @@ const MainView = () => (
     <section className="bg-grey-400">
       <GridWrapper>
         <GridItem width="full">
-          <img src={diablo2Banner}/>
+          <img src={''} className="hero-image"/>
         </GridItem>
         <GridItem width="full">
           <h1>Welcome to the Horadric Armory</h1>

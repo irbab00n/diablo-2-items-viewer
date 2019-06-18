@@ -28,18 +28,13 @@ const _SASS_CSS_RULES = {
       use: ['css-loader', 'sass-loader']
     })
 };
-/* -- IMAGES */
-const _IMAGE_RULES = {
-  test: /\.(png|jpg|gif)$/,
+/* -- FILES */
+const _FILE_RULES = {
+  test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/,
   loader: 'url-loader',
   options: {
     limit: '100000'
   }
-};
-/* -- FILES */
-const _FILE_RULES = {
-  test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-  loader: 'url-loader?limit=100000'
 };
 
 /* OUTPUT CONFIGURATION */
@@ -57,7 +52,6 @@ module.exports = {
     rules: [
       _JS_JSX_RULES,
       _SASS_CSS_RULES,
-      _IMAGE_RULES,
       _FILE_RULES
     ]
   },
