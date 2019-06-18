@@ -1,12 +1,17 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
+import './_items-view.scss';
 
+
+// COMPONENTS
 import SplitComponent from '../../components/SplitComponent';
-
 const GridWrapper = SplitComponent(() => import('../../components/Grid/GridWrapper'));
 const GridItem = SplitComponent(() => import('../../components/Grid/GridItem'));
-const GridItemLink = SplitComponent(() => import('../../components/Grid/GridItemLink'));
+const NavSidebar = SplitComponent(() => import('../../components/NavSidebar'));
+// const GridItemLink = SplitComponent(() => import('../../components/Grid/GridItemLink'));
 
+
+// PAGES
 const ArmorPage = SplitComponent(() => import('./pages/armor'));
 const CharmsPage = SplitComponent(() => import('./pages/CharmsPage'));
 const GemsPage = SplitComponent(() => import('./pages/GemsPage'));
@@ -18,16 +23,13 @@ const RunesPage = SplitComponent(() => import('./pages/RunesPage'));
 const RunewordsPage = SplitComponent(() => import('./pages/RunewordsPage'));
 const WeaponsPage = SplitComponent(() => import('./pages/WeaponsPage'));
 
-import './_items-view.scss';
 
 const ItemsView = (props) => {
   const { match } = props;
   return (
     <main id="items-view">
       <GridWrapper id="items-view-grid">
-        <GridItem width="fifth">
-          SideNav
-        </GridItem>
+        <NavSidebar />
         <Switch>
           <Route exact path={`${match.path}`} component={ItemsPage}/>
           <Route path={`${match.path}/armor`} component={ArmorPage}/>

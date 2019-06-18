@@ -29,6 +29,10 @@
       max-height: calc(100vh - 60px);
       overflow-y: scroll;
     }
+
+    &.use-left-margin {
+      margin-left: 20px;
+    }
   }
 
   & > .fifth-item {
@@ -62,8 +66,11 @@
 }
 
 .grid-item-link {
-
   &:hover {
     background-color: $blue-grey-400;
   }
+}
+
+.grid-spacer {
+  margin: 20px 0;
 }

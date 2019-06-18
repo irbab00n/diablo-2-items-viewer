@@ -8,7 +8,6 @@ import './_grid.scss';
 
 const GridItemLink = (props) => {
   const {
-    anchorRight = false,
     centered = false,
     children = [],
     className = '',
@@ -17,7 +16,10 @@ const GridItemLink = (props) => {
   } = props;
 
   return(
-    <Link className={`${width}-item grid-item-link ${centered ? 'centered' : ''} ${anchorRight ? 'anchor-right' : ''} + ${className}`} href={href}>
+    <Link 
+      className={`grid-item-link ${width}-item ${centered ? 'centered' : ''} ${className}`} 
+      href={href}
+    >
       {children}
     </Link>
   );

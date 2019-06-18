@@ -136,3 +136,29 @@
   }
 }
 
+.color-item-low-quality {
+  // color: $diablo-2-low-quality;
+}
+.color-item-common {
+  // color: $diablo-2-common;
+}
+.color-item-superior {
+  // color: $diablo-2-common;
+}
+.color-item-magic {
+  color: $diablo-2-magic;
+}
+.color-item-rare {
+  color: $diablo-2-rare;
+  background-color: $grey-700;
+  padding: 0px 3px;
+}
+.color-item-crafted {
+  color: $diablo-2-crafted;
+}
+.color-item-set {
+  color: $diablo-2-set;
+}
+.color-item-unique {
+  color: $diablo-2-unique;
+}

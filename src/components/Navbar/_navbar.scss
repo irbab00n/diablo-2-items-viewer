@@ -11,7 +11,7 @@
   @include flex; // display items as a row if items
   @include align-items(center); // and align them in the center of the container
   @include justify-between; // space the items evenly between themselves
-  @include box-shadow(0px, 3px, 5px, 2px, rgba(25, 25, 25, 0.4));
+  // @include box-shadow(0px, 3px, 5px, 2px, rgba(25, 25, 25, 0.4));
   background-color: $grey-900;
   height: $navbar-height;
 }

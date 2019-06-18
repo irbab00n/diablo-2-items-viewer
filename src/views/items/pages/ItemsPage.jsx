@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { isMobile } from 'react-device-detect';
+import './_page-common.scss';
 
 import SplitComponent from '../../../components/SplitComponent';
 
@@ -14,7 +15,7 @@ const ItemsPage = (props) => {
   let gridSize = isMobile ? 'full' : 'four-fifths';
 
   return (
-    <GridItem width={gridSize} enableScrolling={true}>
+    <GridItem width={gridSize}>
       <section>
         <GridWrapper>
           <GridItem width="full"><h1>Welcome to the Items Page</h1></GridItem>
@@ -53,11 +54,11 @@ const ItemsPage = (props) => {
           <GridItemLink width="half" href={`${match.url}/armor`} centered>Armor</GridItemLink>
           <GridItem width="full"><h4>Normal</h4></GridItem>
           <GridItem width="full">
-            <p>Normal Items can be found on Normal, Nightmare and Hell Difficulty Levels. Magic and Rare Items can be Gambled.</p>
+            <p>Normal Items can be found on Normal, Nightmare and Hell Difficulty Levels. <span className="color-item-magic">Magic</span> and <span className="color-item-rare">Rare</span> Items can be Gambled.</p>
           </GridItem>
           <GridItem width="full"><h4>Exceptional</h4></GridItem>
           <GridItem width="full">
-            <p>Exceptional Items have Character Level Limits around level 25. Exceptional Armor has added Defense with higher Strength requirements. Exceptional Weapons have a higher Minimum and Maximum Damage. Weapons that give skill points, have higher level skills and spells on these items. Exceptional Weapons also have higher Strength and Dexterity requirements. There are Socketed, Magic, Rare, Set, Crafted and Unique versions of Exceptional items. Exceptional Items first appear late in Normal Difficulty and become more common as you get to higher difficulty levels tied to monster levels. Magic Exceptional Items can be found at the Vendors at higher Character and Difficulty Levels. Rare Exceptional Items can be Gambled.</p>
+            <p>Exceptional Items have Character Level Limits around level 25. Exceptional Armor has added Defense with higher Strength requirements. Exceptional Weapons have a higher Minimum and Maximum Damage. Weapons that give skill points, have higher level skills and spells on these items. Exceptional Weapons also have higher Strength and Dexterity requirements. There are Socketed, <span className="color-item-magic">Magic</span>, <span className="color-item-rare">Rare</span>, <span className="color-item-set">Set</span>, <span className="color-item-crafted">Crafted</span> and <span className="color-item-unique">Unique</span> versions of Exceptional items. Exceptional Items first appear late in Normal Difficulty and become more common as you get to higher difficulty levels tied to monster levels. <span className="color-item-magic">Magic</span> Exceptional Items can be found at the Vendors at higher Character and Difficulty Levels. <span className="color-item-rare">Rare</span> Exceptional Items can be Gambled.</p>
           </GridItem>
           <GridItem width="full"><h4>Elite</h4></GridItem>
           <GridItem width="full">
@@ -66,6 +67,37 @@ const ItemsPage = (props) => {
           <GridItem width="full"><h4>Normal/Exceptional vs Elite Items</h4></GridItem>
           <GridItem width="full">
             <p>Some Elite Armor has similar Defense to encourage players to adopt different looks. With regards to inconsistencies between Elite and Exceptionals in terms of how they "progress": Elite Weapons may not be perfectly analogous to their Exceptional versions. They are fairly balanced in such a way now that there is no clear superiority in terms of weapon selection. In general - average or minimum damage is more effective in gameplay than max damage. All of the weapons have been balanced for similar damage/time (as far as 1h vs. 1h and 2h vs. 2h is concerned).</p>
+          </GridItem>
+        </GridWrapper>
+      </section>
+      <section>
+        <GridWrapper>
+          <GridItem width="full"><h2>Item Qualities</h2></GridItem>
+          <GridItem width="full">
+            <p>The names of Magic, Rare, Crafted/Very Rare, Set, and Unique Items appear in <span className="color-item-magic">Violet</span>, <span className="color-item-rare">Yellow</span>, <span className="color-item-crafted">Orange</span>, <span className="color-item-set">Green</span>, and <span className="color-item-unique">Gold</span> text, respectively.</p>
+          </GridItem>
+          <GridItem width="full" className="use-left-margin"><h5><span className="color-item-magic">Magic Items</span></h5></GridItem>
+          <GridItem width="full" className="use-left-margin">
+            <p>As Hell's will has corrupted the land, mages and smiths crafted many magical means to keep the people safe from harm. Fine jewelry, armor, and weapons were often enchanted with arcane energies in an effort to assist those who battled against the tide of evil. During your travels you will likely encounter items imbued with these magics, whose names appear in blue when highlighted. Magic Items have one or two magical attributes applied to the basic item. Learn more about [Magic Items]. Take a look at Magic [Prefixes and Suffixes].</p>
+          </GridItem>
+          <GridItem width="full" className="use-left-margin"><h5><span className="color-item-rare">Rare Items</span></h5></GridItem>
+          <GridItem width="full" className="use-left-margin">
+            <p>Some magic items radiate energy beyond that of a simple enchanted item. Although much less common, these rare items are significantly more powerful than standard magically enhanced items. A Rare item is distinguished by a yellow title when highlighted. Rare items contain two to six magic properties and are highly valued by those that have them. The names of rare items are not linked to their magical attributes. Learn more about [Rare Items].</p>
+          </GridItem>
+          <GridItem width="full" className="use-left-margin"><h5><span className="color-item-crafted">Crafted Items</span></h5></GridItem>
+          <GridItem width="full" className="use-left-margin">
+            <p>Crafted Items are similar to rare items but can only be created using the Horadric Cube. These items have fixed properties as well as random Magic Prefixes and Suffixes. [Learn more about Crafted Items.]</p>
+          </GridItem>
+          <GridItem width="full" className="use-left-margin"><h5><span className="color-item-set">Set Items</span></h5></GridItem>
+          <GridItem width="full" className="use-left-margin">
+            <p>Rumors persist of unique, distinguished item sets that once belonged to great champions and heroes from the past. These sets are said to bestow additional magic abilities once all its pieces have been found and equipped. Set items are recognizable by their green names. Once identified, each set item names the other pieces required to complete the set. Set Items are uniquely named and have several magic attributes. When a character is equipped with all the items of a Set, additional bonus magic attributes are added as well. When a set item is selected items in the entire set are listed, and the ones in the set you have in your possession are highlighted. See a list of [Set Items].</p>
+          </GridItem>
+          <GridItem width="full" className="use-left-margin"><h5><span className="color-item-unique">Unique Items</span></h5></GridItem>
+          <GridItem width="full" className="use-left-margin">
+            <p>Once in a long while, a dedicated and intrepid adventurer may come across an item of particularly legendary and unique power. Unique Items have unique names and attributes. Unique Items are more rare than Rare or Set Items. See some [Unique Items].</p>
+          </GridItem>
+          <GridItem width="full" className="use-left-margin">
+            <p>Note: Magical attributes are typically listed along with any regular and superior attributes an item may have. This may result in a list of what appears to be more than the limits described above for magical attributes of an item type (magic, rare, set or unique).</p>
           </GridItem>
         </GridWrapper>
       </section>

@@ -33,7 +33,7 @@ const _IMAGE_RULES = {
   test: /\.(png|jpg|gif)$/,
   loader: 'url-loader',
   options: {
-    limit: '25000'
+    limit: '100000'
   }
 };
 /* -- FILES */

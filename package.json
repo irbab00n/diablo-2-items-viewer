@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack --config webpack.dev.js",
-    "start-dev": "npm run dev & nodemon server",
+    "dev": "webpack --config webpack.dev.jss",
+    "start:dev": "npm run dev & nodemon server",
     "start": "npm run build & node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "jsdom": "^15.1.1",
     "lodash": "^4.17.11",
     "morgan": "^1.9.1",
     "prop-types": "^15.7.2",

@@ -1,4 +1,5 @@
 /**
+ * @module 
  * @param {String} string - string you want to capitolize the first character for
  * @returns {String} String will have the first letter capitolized
  */

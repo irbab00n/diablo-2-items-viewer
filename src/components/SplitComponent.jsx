@@ -2,6 +2,7 @@ import React from "react";
 
 /** splitComponent 
  * Returns a Higher-order component that will handle the async dynamic import.
+ * You can insert a loader component to load in it's place
  * @param {Promise} getComponent - Promise object resulting from the dynamic import() syntax
  * @returns {React.Component} SplitComponent - A component that will dynamically import and render components 
  */
